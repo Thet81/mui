@@ -2,6 +2,7 @@
 import { Button, Container, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField, Typography } from "@mui/material"
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateNotePage = ()=> {
 
@@ -11,7 +12,7 @@ const CreateNotePage = ()=> {
     const [detailError, setDetailError] = useState(false)
     const [category, setCategory] = useState("remainders")
 
-
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
 
@@ -39,6 +40,7 @@ const CreateNotePage = ()=> {
                 })
             }).then((data)=>{
                 console.log(data)
+                navigate('/')
             })
         }
     }

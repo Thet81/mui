@@ -1,22 +1,17 @@
 {
-    "notes" : [
-        {
-            "title" : "Yoshi's birthday bash",
-            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting",
-            "category" : "reminders",
-            "id" : 1
-        },
-        {
-            "title" : "Coomplete my ninja training",
-            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting",
-            "category" : "word",
-            "id" : 2
-        },
-          {
-            "title" : "Order a pizza",
-            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting",
-            "category" : "todos",
-            "id" : 3
-        }
-    ]
+  "notes": [
+    {
+      "title": "Coomplete my ninja training",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "category": "word",
+      "id": "2"
+    },
+    {
+      "title": "Order a pizza",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "category": "todos",
+      "id": "3"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

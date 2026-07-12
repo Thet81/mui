@@ -1,10 +1,26 @@
+import { DeleteOutlineOutlined } from "@mui/icons-material";
+import { Card, CardContent, CardHeader, IconButton, Typography } from "@mui/material";
 
 
-const NoteCard = ()=> {
+const NoteCard = ({note, handleDelete})=> {
     return (
-        <div>
-            notes
-        </div>
+        <Card>
+            <CardHeader
+                action={
+                    <IconButton onClick={()=>handleDelete(note.id)}>
+                        <DeleteOutlineOutlined/>
+                    </IconButton>
+                }
+
+                title={note.title}
+                subheader = {note.category}
+            />
+            <CardContent>
+                <Typography>
+                    {note.details}
+                </Typography>
+            </CardContent>
+        </Card>
     )
 }
 
